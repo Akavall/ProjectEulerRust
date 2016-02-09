@@ -27,7 +27,9 @@ pub mod prime_utilities {
         let expected: Vec<i64> = vec![2,3,5,7,11,13,17,19,23,29];
         assert_eq!(result, expected);
     }
+}
 
+pub mod palindrome_utilities {
     pub fn is_palindrome(mut a: i64) -> bool {
         let mut my_vec = vec![];
         while a > 0{
@@ -53,6 +55,11 @@ pub mod prime_utilities {
     #[test]
     fn test_121_is_palindrome() {
         assert_eq!(is_palindrome(121), true);
+    }
+
+    #[test]
+    fn test_906609_is_palindrome() {
+        assert_eq!(is_palindrome(906609), true);
     }
 
 }
